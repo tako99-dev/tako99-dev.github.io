@@ -49,10 +49,10 @@ body {
 /* 名前と自己紹介 */
 .profile { display: grid; justify-items: center; gap: 8px; text-align: center; }
 .avatar {
+  display: block;
   width: 88px; height: 88px; border-radius: 50%;
-  background: var(--accent-bg); color: var(--accent);
-  display: grid; place-items: center;
-  font-size: 32px; font-weight: 700;
+  object-fit: cover;
+  background: var(--accent-bg);
 }
 .name { margin: 4px 0 0; font-size: 22px; overflow-wrap: anywhere; }
 .bio { margin: 0; color: var(--sub); font-size: 15px; }
