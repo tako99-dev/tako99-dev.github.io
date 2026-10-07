@@ -9,6 +9,8 @@
   --accent-bg: #e6f1fb;
   --learning: #854f0b;
   --learning-bg: #faeeda;
+  --can: #27500a;
+  --can-bg: #eaf3de;
   color-scheme: light;
 }
 @media (prefers-color-scheme: dark) {
@@ -22,6 +24,8 @@
     --accent-bg: #0c447c;
     --learning: #fac775;
     --learning-bg: #633806;
+    --can: #c0dd97;
+    --can-bg: #27500a;
     color-scheme: dark;
   }
 }
@@ -80,5 +84,7 @@ body {
 }
 .level { font-size: 12px; font-weight: 700; padding: 2px 10px; border-radius: 999px; white-space: nowrap; }
 .level-learning { color: var(--learning); background: var(--learning-bg); }
+.level-can { color: var(--can); background: var(--can-bg); }
+.level-cert { color: var(--accent); background: var(--accent-bg); }
 
 .footer { text-align: center; color: var(--sub); font-size: 12px; }

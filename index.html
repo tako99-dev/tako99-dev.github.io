@@ -4,10 +4,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>ko_k__78</title>
-  <meta name="description" content="IT系を目指して JavaScript を勉強中。日々のことを note と X で発信しています">
+  <meta name="description" content="IT系を目指して勉強中の社会人。日々のことをXやnoteで発信中です。">
   <meta property="og:type" content="profile">
   <meta property="og:title" content="ko_k__78">
-  <meta property="og:description" content="IT系を目指して JavaScript を勉強中。日々のことを note と X で発信しています">
+  <meta property="og:description" content="IT系を目指して勉強中の社会人。日々のことをXやnoteで発信中です。">
   <meta property="og:url" content="https://tako99-dev.github.io/">
   <meta name="twitter:card" content="summary">
   <link rel="stylesheet" href="style.css">
@@ -18,16 +18,16 @@
     <header class="profile">
       <div class="avatar" aria-hidden="true">K</div>
       <h1 class="name">ko_k__78</h1>
-      <p class="bio">IT系を目指して JavaScript を勉強中。日々のことを note と X で発信しています</p>
+      <p class="bio">IT系を目指して勉強中の社会人。<br>日々のことをXやnoteで発信中です。</p>
     </header>
 
     <!-- リンク -->
     <nav class="links" aria-label="リンク">
-      <a class="link" href="https://note.com/ko_k__78" target="_blank" rel="noopener">
-        <span class="link-label">note</span><span class="link-sub">日々の記録</span>
-      </a>
       <a class="link" href="https://x.com/ko_k__78" target="_blank" rel="noopener">
         <span class="link-label">X</span><span class="link-sub">ふだんの発信</span>
+      </a>
+      <a class="link" href="https://note.com/ko_k__78" target="_blank" rel="noopener">
+        <span class="link-label">note</span><span class="link-sub">日々の記録</span>
       </a>
       <a class="link" href="https://kok78.substack.com" target="_blank" rel="noopener">
         <span class="link-label">Substack</span><span class="link-sub">英語での発信</span>
@@ -41,12 +41,29 @@
     <section id="side-business" class="links" aria-label="副業" hidden>
     </section>
 
-    <!-- できること・勉強中のこと（段階: 勉強中 → 基本が書ける → 使って作ったものがある） -->
-    <section class="skills" aria-labelledby="skills-title">
-      <h2 id="skills-title">できること・勉強中のこと</h2>
+    <!-- 勉強中 -->
+    <section id="skills-learning" class="skills" aria-labelledby="skills-learning-title">
+      <h2 id="skills-learning-title">勉強中</h2>
       <ul>
         <li class="skill"><span>JavaScript</span><span class="level level-learning">勉強中</span></li>
         <li class="skill"><span>HTML / CSS</span><span class="level level-learning">勉強中</span></li>
+      </ul>
+    </section>
+
+    <!-- できること（1つ目を書いたら hidden を外す）
+         書き方の例: <li class="skill"><span>JavaScript</span><span class="level level-can">基本が書ける</span></li>
+         勉強中から移すときは、上の「勉強中」の行を消してここに書く -->
+    <section id="skills-can" class="skills" aria-labelledby="skills-can-title" hidden>
+      <h2 id="skills-can-title">できること</h2>
+      <ul>
+      </ul>
+    </section>
+
+    <!-- 資格（1つ目を書いたら hidden を外す）
+         書き方の例: <li class="skill"><span>資格の名前</span><span class="level level-cert">2027年4月 取得</span></li> -->
+    <section id="certifications" class="skills" aria-labelledby="certifications-title" hidden>
+      <h2 id="certifications-title">資格</h2>
+      <ul>
       </ul>
     </section>
 
