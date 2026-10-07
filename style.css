@@ -1,0 +1,84 @@
+/* 色はここ（:root）でまとめて決める。1か所直せば全体が変わる */
+:root {
+  --bg: #f6f5f1;
+  --card: #ffffff;
+  --text: #1d1d1b;
+  --sub: #5f5e5a;
+  --line: #dcdad2;
+  --accent: #185fa5;
+  --accent-bg: #e6f1fb;
+  --learning: #854f0b;
+  --learning-bg: #faeeda;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #161614;
+    --card: #222220;
+    --text: #ecebe6;
+    --sub: #b4b2a9;
+    --line: #3a3a37;
+    --accent: #85b7eb;
+    --accent-bg: #0c447c;
+    --learning: #fac775;
+    --learning-bg: #633806;
+    color-scheme: dark;
+  }
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic", "Noto Sans JP", sans-serif;
+  line-height: 1.7;
+}
+.page {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 48px 16px 32px;
+  display: grid;
+  gap: 28px;
+}
+
+/* 名前と自己紹介 */
+.profile { display: grid; justify-items: center; gap: 8px; text-align: center; }
+.avatar {
+  width: 88px; height: 88px; border-radius: 50%;
+  background: var(--accent-bg); color: var(--accent);
+  display: grid; place-items: center;
+  font-size: 32px; font-weight: 700;
+}
+.name { margin: 4px 0 0; font-size: 22px; overflow-wrap: anywhere; }
+.bio { margin: 0; color: var(--sub); font-size: 15px; }
+
+/* リンクのボタン */
+.links { display: grid; gap: 12px; }
+.link {
+  display: flex; justify-content: space-between; align-items: center; gap: 12px;
+  padding: 16px 20px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  color: var(--text);
+  text-decoration: none;
+}
+.link:hover { border-color: var(--accent); }
+.link:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.link-label { font-weight: 700; font-size: 16px; }
+.link-sub { color: var(--sub); font-size: 13px; }
+
+/* できること・勉強中のこと */
+.skills h2 { font-size: 15px; margin: 0 0 8px; }
+.skills ul { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line); }
+.skill {
+  display: flex; justify-content: space-between; align-items: center; gap: 12px;
+  padding: 12px 4px;
+  border-bottom: 1px solid var(--line);
+  font-size: 15px;
+}
+.level { font-size: 12px; font-weight: 700; padding: 2px 10px; border-radius: 999px; white-space: nowrap; }
+.level-learning { color: var(--learning); background: var(--learning-bg); }
+
+.footer { text-align: center; color: var(--sub); font-size: 12px; }
