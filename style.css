@@ -11,8 +11,8 @@
   --learning-bg: #faeeda;
   --can: #27500a;
   --can-bg: #eaf3de;
-  --dev: #3c3489;
-  --dev-bg: #eeedfe;
+  --dev: #185fa5;
+  --dev-bg: #e6f1fb;
   color-scheme: light;
 }
 @media (prefers-color-scheme: dark) {
@@ -28,8 +28,8 @@
     --learning-bg: #633806;
     --can: #c0dd97;
     --can-bg: #27500a;
-    --dev: #cecbf6;
-    --dev-bg: #3c3489;
+    --dev: #85b7eb;
+    --dev-bg: #0c447c;
     color-scheme: dark;
   }
 }
