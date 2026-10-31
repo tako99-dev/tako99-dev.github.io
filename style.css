@@ -91,5 +91,8 @@ body {
 .level-can { color: var(--can); background: var(--can-bg); }
 .level-cert { color: var(--accent); background: var(--accent-bg); }
 .level-dev { color: var(--dev); background: var(--dev-bg); }
+.app { display: flex; flex-direction: column; }
+.app-link { color: var(--accent); font-weight: 700; text-underline-offset: 3px; }
+.app-note { color: var(--sub); font-size: 12px; }
 
 .footer { text-align: center; color: var(--sub); font-size: 12px; }
